@@ -7,7 +7,7 @@
 #include "../s21_math.h"
 
 
-Suite *Suite_s21_log();
+Suite *s21_Suite_log();
 
 
 #endif // SRC_TESTS_M_

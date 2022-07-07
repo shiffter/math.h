@@ -1,15 +1,5 @@
 #include "../s21_math.h"
 
-int main(){
-
-
-    for (double i = 0.1; i <= 5; i += 1) 
-        printf("lib_log=%lf, my_log=%Lf, i= %lf\n", log(s21_inf), s21_log(s21_inf), i);
-    
-//   printf("%lf", log(s21_inf));
-return 0;
-}
-
 
 long double s21_log(double x) {
 
@@ -21,7 +11,7 @@ long double s21_log(double x) {
             x = x/2;
             degree++;
             }
-        for (double i = 1; i <= 20; i++) {
+        for (double i = 1; i <= 50; i++) {
             result += sign * pow(x-1, i)/i;
             sign = -sign;
         }

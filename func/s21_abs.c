@@ -1,4 +1,4 @@
-#include "./s21_math.h"
+#include "../s21_math.h"
 
 
 int s21_abs(int value){
