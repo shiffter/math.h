@@ -8,7 +8,7 @@
 #define s21_nan 0.0/0.0
 #define s21_isinf(x) __builtin_isinf_sign(x)
 #define s21_isnan(x) __builtin_isnan(x)
-
+#define log_2 0.69314718055994
 
 int s21_abs(int);
 long double s21_sin(double);
@@ -17,4 +17,4 @@ long double s21_pow(double, double);
 long double s21_log(double);
 long double mid_num(double, double);
 long double s21_exp(double);
-long double s21_intpow(double arg, int exp); 
+long double s21_intpow(double, int); 

@@ -8,6 +8,7 @@
 
 
 Suite *s21_Suite_log();
+Suite *s21_Suite_exp();
 
 
 #endif // SRC_TESTS_M_
