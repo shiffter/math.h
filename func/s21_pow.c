@@ -1,16 +1,17 @@
 #include "../s21_math.h"
-#include <math.h>
 
 
 int main() {
-    printf("val = %f\n", pow(2, -2.14));
+
+    printf("my = %Lf, lib = %lf\n", s21_pow(3.151654321, 4.312345), pow(3.151654321, 4.312345));
 return 0;
-    }
+}
 
 
-double s21_pow(double value, double exp) {
-    double result = 1;
-    for (int i = 1; i <= exp; i++)
-        result *= value;
+long double s21_pow(double value, double exp) {
+    long double result = 0;
+    
+    result = s21_exp(exp * s21_log(value));
+
 return result;
 }
