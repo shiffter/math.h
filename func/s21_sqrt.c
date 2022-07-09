@@ -1,11 +1,11 @@
 #include "../s21_math.h"
 
 
-int main() {
+/*int main() {
     printf("my %0.8Lf, lib %0.8lf\n", s21_sqrt(s21_nan), sqrt(s21_nan));
 
 return 0;
-}
+}*/
 
 
 long double s21_sqrt(double x) {
