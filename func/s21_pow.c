@@ -21,7 +21,7 @@ long double s21_pow(double value, double exp) {
     } else if (exp == 0) {
         result = 1.0;
     } else {
-        result = s21_exp(exp * s21_log(s21_abs(value))); 
+        result = s21_exp(exp * s21_log(value)); 
     }
 return result;
 }

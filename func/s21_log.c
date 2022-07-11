@@ -3,11 +3,11 @@
 /*int main() {
 
 
-    printf("my %Lf, lib %lf", s21_exp(exp * s21_log(0.000099)), exp(exp * log(0.000099)));
+    printf("my %Lf, lib %lf", s21_log(0.000001105), log(0.000001105));
 return 0;
-}
+}*/
 
-*/
+
 long double s21_log(double x) {
 
     double result = 0;
@@ -22,12 +22,10 @@ long double s21_log(double x) {
 
     } else {
         for (; x >= s21_e; x /= s21_e, degree++) continue;
-        for (int i = 0; i < 25; i++) {
+        for (int i = 0; i < 100; i++) {
             comp = result;
-            result = comp + 2 * (x - s21_exp(comp)) / (x + s21_exp(comp));    
-        }
-        
-            
+            result = comp + 2.0 * (x - s21_exp(comp)) / (x + s21_exp(comp));    
+        } 
     }
 return (result + degree);
 }

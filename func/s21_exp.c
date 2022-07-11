@@ -1,10 +1,10 @@
 #include "../s21_math.h"
 
-int main() {
-    printf("me  %0.15Lf\nlib %0.15lf\n", s21_pow(0.000099, 3), pow(0.000099, 3));
+/*int main() {
+    printf("me  %0.10Lf\nlib %0.10lf\n", s21_log(0.0001), log(0.0001));
 return 0;
 }
-
+*/
 long double s21_exp(double arg){
     long double result = 1;
 
